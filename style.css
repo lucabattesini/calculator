@@ -59,6 +59,7 @@ TO DO Teclado:
 }
 
 .keyboard button {
+    display: flex;
     background-color: #22252e;
     color: white;
     border: none;
@@ -67,6 +68,9 @@ TO DO Teclado:
     width: 60px;
     height: 60px;
     border-radius: 10px;
+    margin: 0 10px;
+    margin-top: 20px;
+    flex-direction: row;
 }
 
 .functions2 button {
@@ -75,4 +79,25 @@ TO DO Teclado:
 
 .functions button {
     color: tomato;
+}
+
+.row_1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.row_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.row_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.row_4 {
+    display: flex;
+    justify-content: center;
 }
