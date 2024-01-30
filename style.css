@@ -38,24 +38,23 @@ TO DO Teclado:
 
 .numbers {
     font-size: 25px;
-    margin: 20px;
 }
 
 .functions {
     font-size: 25px;
     color: rgb(247, 93, 66);
-    margin: 20px;
 }
 
 .functions2 {
     font-size: 25px;
     color: turquoise;
-    margin: 20px;
 }
 
 .keyboard {
     background-color: #2b2a34;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .keyboard button {
@@ -69,12 +68,17 @@ TO DO Teclado:
     height: 60px;
     border-radius: 10px;
     margin: 0 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     flex-direction: row;
 }
 
 .functions2 button {
     color: turquoise;
+}
+
+.functions2 {
+    display: flex;
+    justify-content: center;
 }
 
 .functions button {
