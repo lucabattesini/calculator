@@ -68,7 +68,8 @@ TO DO Teclado:
     height: 60px;
     border-radius: 10px;
     margin: 0 10px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: row;
 }
 
@@ -83,10 +84,11 @@ TO DO Teclado:
 
 .functions button {
     color: tomato;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .row_1 {
-    flex: 1;
     display: flex;
     justify-content: center;
 }
