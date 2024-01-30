@@ -65,6 +65,8 @@ TO DO Teclado:
 .keyboard button {
     display: flex;
     background-color: #22252e;
+    align-items: center;
+    justify-content: center;
     color: white;
     border: none;
     font-size: 30px;
