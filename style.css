@@ -78,6 +78,10 @@ TO DO Teclado:
     flex-direction: row;
 }
 
+.sinals {
+    margin-top: 30px;
+}
+
 .functions2 button {
     color: turquoise;
 }
@@ -85,6 +89,7 @@ TO DO Teclado:
 .functions2 {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .functions button {
@@ -96,6 +101,7 @@ TO DO Teclado:
 .row_1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .row_2 {
