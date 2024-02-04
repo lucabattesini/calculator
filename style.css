@@ -7,11 +7,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .screen {
     font-size: 50px ;
-    font-weight: bold;
     height: 100px;
     text-align: right;
     padding-top: 100px;
@@ -78,6 +78,7 @@ TO DO Teclado:
     margin-top: 10px;
     margin-bottom: 10px;
     flex-direction: row;
+    font-weight: bold;
 }
 
 .sinals {
