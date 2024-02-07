@@ -9,6 +9,8 @@ const n7 = window.document.getElementById("7")
 const n8 = window.document.getElementById("8")
 const n9 = window.document.getElementById("9")
 
+
+
 var screen = window.document.getElementById("screen")
 
 var screenNumbers = ""
