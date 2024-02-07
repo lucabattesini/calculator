@@ -18,40 +18,40 @@ n1.addEventListener("click", () => {
     screenNumbers = screenNumbers + "1"
 })
 n2.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 2
+    screen.innerText = screenNumbers + "2"
     screenNumbers = screenNumbers + "2"
 })
 n3.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 3
+    screen.innerText = screenNumbers + "3"
     screenNumbers = screenNumbers + "3"
 })
 n4.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 4
+    screen.innerText = screenNumbers + "4"
     screenNumbers = screenNumbers + "4"
 })
 n5.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 5
+    screen.innerText = screenNumbers + "5"
     screenNumbers = screenNumbers + "5"
 })
 n6.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 6
+    screen.innerText = screenNumbers + "6"
     screenNumbers = screenNumbers + "6"
 })
 n7.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 7
+    screen.innerText = screenNumbers + "7"
     screenNumbers = screenNumbers + "7"
 })
 n8.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 8
+    screen.innerText = screenNumbers + "8"
     screenNumbers = screenNumbers + "8"
 })
 n9.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 9
+    screen.innerText = screenNumbers + "9"
     screenNumbers = screenNumbers + "9"
 })
 
 n0.addEventListener("click", () => {
-    screen.innerText = screenNumbers + 0
+    screen.innerText = screenNumbers + "0"
     screenNumbers = screenNumbers + "0"
 })
 
