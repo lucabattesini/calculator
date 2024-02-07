@@ -13,3 +13,11 @@ function ac() {
         screen.innerText = ""
     })
 }
+
+function porcentagem() {
+    const percent = window.document.getElementById("%")
+    percent.addEventListener("click", () => {
+        screen.innerText = screenNumbers + "%"
+        screenNumbers = screenNumbers + "%"
+    })
+}
