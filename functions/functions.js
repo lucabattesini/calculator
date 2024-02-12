@@ -21,5 +21,3 @@ function porcentagem() {
         screenNumbers = screenNumbers + "%"
     })
 }
-
-module.exports = back, ac, porcentagem
