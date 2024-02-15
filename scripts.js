@@ -8,7 +8,14 @@ const n6 = window.document.getElementById("6")
 const n7 = window.document.getElementById("7")
 const n8 = window.document.getElementById("8")
 const n9 = window.document.getElementById("9")
-
+const soma = window.document.getElementById("+")
+const subtracao = window.document.getElementById("-")
+const divisao = window.document.getElementById("/")
+const multiplicacao = window.document.getElementById("x")
+const igual = window.document.getElementById("=")
+const percent = window.document.getElementById("%")
+const ac = window.document.getElementById("ac")
+const bck = window.document.getElementById("back")
 
 
 var screen = window.document.getElementById("screen")
@@ -16,7 +23,7 @@ var screen = window.document.getElementById("screen")
 var screenNumbers = ""
 
 n1.addEventListener("click", () => {
-    screen.innerText = screenNumbers + '1'
+    screen.innerText = screenNumbers + "1"
     screenNumbers = screenNumbers + "1"
 })
 n2.addEventListener("click", () => {
@@ -60,4 +67,79 @@ n0.addEventListener("click", () => {
 ponto.addEventListener("click", () => {
     screen.innerText = screenNumbers + "."
     screenNumbers = screenNumbers + "."
+})
+
+bck.addEventListener("click", () => {
+    screenNumbers = screenNumbers.slice(0, -1);
+    screen.innerText = screenNumbers
+})
+
+ac.addEventListener("click", () => {
+    screenNumbers = ""
+    screen.innerText = ""
+})
+
+percent.addEventListener("click", () => {
+    screen.innerText = screenNumbers + "%"
+    screenNumbers = screenNumbers + "%"
+})
+
+var acaoEscolhida = ""
+
+soma.addEventListener("click", () => {
+    screen.innerText = screenNumbers + " + "
+    screenNumbers = screenNumbers + " + "
+    acaoEscolhida = "soma"
+})
+
+subtracao.addEventListener("click", () => {
+    screen.innerText = screenNumbers + " - "
+    screenNumbers = screenNumbers + " - "
+    acaoEscolhida = "subtracao"
+})
+
+divisao.addEventListener("click", () => {
+    screen.innerText = screenNumbers + " / "
+    screenNumbers = screenNumbers + " / "
+    acaoEscolhida = "divisao"
+})
+
+multiplicacao.addEventListener("click", () => {
+    screen.innerText = screenNumbers + " x "
+    screenNumbers = screenNumbers + " * "
+    acaoEscolhida = "multiplicacao"
+})
+
+var resolver = 0
+var resultado = ""
+
+igual.addEventListener("click", () => {
+    var conta = screenNumbers.split(" ")
+    var valor1 = parseInt(conta[0])
+    var valor2 = parseInt(conta[2])
+    var operador = conta[1]
+
+    if ( acaoEscolhida === "soma" ) {
+        screenNumbers = ""
+        resultado = valor1 + valor2
+        screen.innerText = resultado
+
+    } else if ( acaoEscolhida === "subtracao" ) {
+        screenNumbers = ""
+        resultado = valor1 - valor2
+        screen.innerText = resultado
+
+    } else if ( acaoEscolhida === "divisao" ) {
+        screenNumbers = ""
+        resultado = valor1 / valor2
+        screen.innerText = resultado
+
+    } else if ( acaoEscolhida === "multiplicacao" ) {
+        screenNumbers = ""
+        resultado = valor1 * valor2
+        screen.innerText = resultado
+
+    } else {
+
+    }
 })
