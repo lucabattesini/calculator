@@ -116,21 +116,25 @@ igual.addEventListener("click", () => {
     if ( acaoEscolhida === "soma" ) {
         screenNumbers = ""
         resultado = valor1 + valor2
+        resultado = resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "subtracao" ) {
         screenNumbers = ""
         resultado = valor1 - valor2
+        resultado = resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "divisao" ) {
         screenNumbers = ""
         resultado = valor1 / valor2
+        resultado = resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "multiplicacao" ) {
         screenNumbers = ""
         resultado = valor1 * valor2
+        resultado = resultado.toFixed(3)
         screen.innerText = resultado
 
     } else {
