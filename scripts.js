@@ -117,24 +117,28 @@ igual.addEventListener("click", () => {
         screenNumbers = ""
         resultado = valor1 + valor2
         resultado = resultado.toFixed(3)
+        screenNumbers = resultado
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "subtracao" ) {
         screenNumbers = ""
         resultado = valor1 - valor2
         resultado = resultado.toFixed(3)
+        screenNumbers = resultado
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "divisao" ) {
         screenNumbers = ""
         resultado = valor1 / valor2
         resultado = resultado.toFixed(3)
+        screenNumbers = resultado
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "multiplicacao" ) {
         screenNumbers = ""
         resultado = valor1 * valor2
         resultado = resultado.toFixed(3)
+        screenNumbers = resultado
         screen.innerText = resultado
 
     } else {
