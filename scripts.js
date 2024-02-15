@@ -13,7 +13,6 @@ const subtracao = window.document.getElementById("-")
 const divisao = window.document.getElementById("/")
 const multiplicacao = window.document.getElementById("x")
 const igual = window.document.getElementById("=")
-const percent = window.document.getElementById("%")
 const ac = window.document.getElementById("ac")
 const bck = window.document.getElementById("back")
 
@@ -79,11 +78,6 @@ ac.addEventListener("click", () => {
     screen.innerText = ""
 })
 
-percent.addEventListener("click", () => {
-    screen.innerText = screenNumbers + "%"
-    screenNumbers = screenNumbers + "%"
-})
-
 var acaoEscolhida = ""
 
 soma.addEventListener("click", () => {
@@ -115,28 +109,32 @@ var resultado = ""
 
 igual.addEventListener("click", () => {
     var conta = screenNumbers.split(" ")
-    var valor1 = parseInt(conta[0])
-    var valor2 = parseInt(conta[2])
+    var valor1 = parseFloat(conta[0])
+    var valor2 = parseFloat(conta[2])
     var operador = conta[1]
 
     if ( acaoEscolhida === "soma" ) {
         screenNumbers = ""
         resultado = valor1 + valor2
+        resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "subtracao" ) {
         screenNumbers = ""
         resultado = valor1 - valor2
+        resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "divisao" ) {
         screenNumbers = ""
         resultado = valor1 / valor2
+        resultado.toFixed(3)
         screen.innerText = resultado
 
     } else if ( acaoEscolhida === "multiplicacao" ) {
         screenNumbers = ""
         resultado = valor1 * valor2
+        resultado.toFixed(3)
         screen.innerText = resultado
 
     } else {
