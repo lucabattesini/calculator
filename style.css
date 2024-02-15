@@ -19,27 +19,6 @@ body{
     margin-bottom: 20px;
 }
 
-/* 
-TO DO screen:
-- Tamanho da fonte ✅
-- Tipo da Fonte ✅
-- Peso da fonte ✅
-- Tamanho do visor ✅
-- Alinhamento do número em relação ao visor (canto inferior direito)
-- Separar a caixa do visor
-*/
-
-/* 
-TO DO Teclado:
-- Tamanho da fonte v
-- Tipo da Fonte v
-- Peso da fonte v
-- Cor dos botões v
-- Cor do teclado v
-- Cor dos símbolos v
-- Alinhamento dos números (4 por linha)
-*/
-
 .numbers {
     font-size: 25px;
 }
